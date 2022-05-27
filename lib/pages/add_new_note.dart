@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class AddNewPage extends StatefulWidget {
   const AddNewPage({Key? key}) : super(key: key);
@@ -23,7 +24,13 @@ class _AddNewPageState extends State<AddNewPage> {
           
           IconButton(
               onPressed: (){},
-              icon: const Icon(Icons.check),
+              icon: SvgPicture.asset(
+                'assets/heart-fill.svg',
+                height: 25,
+                width: 25,
+                fit: BoxFit.cover,
+              ),
+
           ),
         ],
       ),

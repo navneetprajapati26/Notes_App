@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notes_app/pages/add_new_note.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class Home_Page extends StatefulWidget {
   const Home_Page({Key? key}) : super(key: key);
@@ -18,19 +19,348 @@ class _Home_PageState extends State<Home_Page> {
         title: Text("Notes"),
         centerTitle: true,
       ),
-      body: SafeArea(
-        child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2),
-          itemCount: 5,
-          itemBuilder: (context, index) {
-            return Container(
-              margin: EdgeInsets.all(5),
-              decoration: BoxDecoration(
-                  color: Colors.amber, borderRadius: BorderRadius.circular(20)),
-            );
-          },
-        ),
+      body: Stack(
+        children: [
+          Container(
+            alignment: Alignment.center,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                    SvgPicture.asset(
+                      'assets/notes_background.svg',
+                      height: 65,
+                      width: 65,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+
+
+          SafeArea(
+            child: GridView.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2),
+              itemCount: 25,
+              itemBuilder: (context, index) {
+                return Container(
+                  margin: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                      color: Color(0xCCE5E5E5), borderRadius: BorderRadius.circular(20)),
+                );
+              },
+            ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
