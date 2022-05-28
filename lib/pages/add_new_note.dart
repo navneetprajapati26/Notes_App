@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:notes_app/models/note.dart';
+import 'package:notes_app/providers/notes_providers.dart';
+import 'package:provider/provider.dart';
+import 'package:uuid/uuid.dart';
 
 class AddNewPage extends StatefulWidget {
   const AddNewPage({Key? key}) : super(key: key);
@@ -10,7 +14,22 @@ class AddNewPage extends StatefulWidget {
 
 class _AddNewPageState extends State<AddNewPage> {
 
+  TextEditingController titleController = TextEditingController();
+  TextEditingController contentController = TextEditingController();
+
   FocusNode noteFoucus = FocusNode();
+  void addNewNote(){
+    Note newNote = Note(
+      id: const Uuid().v1(),
+      userid: "navneet",
+      title: titleController.text,
+      content: contentController.text,
+      dateadded: DateTime.now(),
+    );
+
+    Provider.of<NotesProvider>(context, listen: false).addNote(newNote);
+    Navigator.pop(context);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +42,9 @@ class _AddNewPageState extends State<AddNewPage> {
         actions: [
           
           IconButton(
-              onPressed: (){},
+              onPressed: (){
+                addNewNote();
+              },
               icon: SvgPicture.asset(
                 'assets/heart-fill.svg',
                 height: 25,
@@ -40,6 +61,7 @@ class _AddNewPageState extends State<AddNewPage> {
           child: Column(
             children: [
                TextField(
+                 controller: titleController,
                 autofocus: true,
                 onSubmitted: (val){
                   if(val!= ""){
@@ -58,6 +80,7 @@ class _AddNewPageState extends State<AddNewPage> {
 
               Expanded(
                 child: TextField(
+                  controller: contentController,
                   focusNode: noteFoucus,
                   maxLines: null,
                   style: const TextStyle(
