@@ -236,111 +236,8 @@ class _Home_PageState extends State<Home_Page> {
                     ),
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                    SvgPicture.asset(
-                      'assets/notes_background.svg',
-                      height: 65,
-                      width: 65,
-                      fit: BoxFit.cover,
-                    ),
-                  ],
-                ),
+
+
               ],
             ),
           ),
@@ -371,7 +268,12 @@ class _Home_PageState extends State<Home_Page> {
                 builder: (context) => const AddNewPage()),
           );
         },
-        child: Icon(Icons.add),
+        child: SvgPicture.asset(
+          'assets/pencil-fill.svg',
+          height: 15,
+          width: 15,
+          fit: BoxFit.cover,
+        ),
         backgroundColor: Colors.tealAccent,
       ),
     );
