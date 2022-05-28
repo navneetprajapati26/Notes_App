@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notes_app/pages/add_new_note.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:notes_app/providers/notes_providers.dart';
+import 'package:provider/provider.dart';
 
 class Home_Page extends StatefulWidget {
   const Home_Page({Key? key}) : super(key: key);
@@ -13,6 +15,9 @@ class Home_Page extends StatefulWidget {
 class _Home_PageState extends State<Home_Page> {
   @override
   Widget build(BuildContext context) {
+
+    NotesProvider notesProvider = Provider.of<NotesProvider>(context);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.tealAccent,
@@ -247,7 +252,7 @@ class _Home_PageState extends State<Home_Page> {
             child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2),
-              itemCount: 25,
+              itemCount: notesProvider.notes.length,
               itemBuilder: (context, index) {
                 return Container(
                   margin: EdgeInsets.all(5),
