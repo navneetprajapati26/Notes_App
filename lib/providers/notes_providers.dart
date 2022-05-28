@@ -8,6 +8,7 @@ class NotesProvider with ChangeNotifier{
 
   void addNote(Note note){
     notes.add(note);
+    //Todo API save
     notifyListeners();
   }
 
